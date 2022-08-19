@@ -6,7 +6,7 @@ fun_factorial (){
         done
         echo $facto
 }
-read -p "Valor: " x
+read -p "Ingresar un valor: " x
 for i in $(seq 1 1 $x)
 do
 	factor=$(fun_factorial $i)
