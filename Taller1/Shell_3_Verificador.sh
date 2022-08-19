@@ -1,22 +1,18 @@
 
 pass=0
 fun_checkvalue (){
-	$1
 
+	if [[ 0 -eq "$1"]] || [[0 -eq "$1"]]
 
-	if [[ $1=="0" || $1=="1"]]; then 
-		pass=1
+	then 
+	     let pass=1
 	else
-		echo "Intente  denuevo con otro parametro"
+	     echo "Intente denuevo con otro parametro"
 
-fi
+	echo $pass
+	fi
+ } 
 
-
-
-
-}
-
-while read pass
-do 
+fun_checkvalue $1
 
 
